@@ -1,0 +1,253 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2c2c2c;
+}
+
+.grid-item p {
+  font-size: 14px;
+  color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+  opacity: 0.5;
+  width: Fixed (1, 178px)px;
+  height: Fixed (588px)px;
+  top: 608px;
+  left: -355px;
+  gap: 2px;
+  opacity: 0px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #2c2c2c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+  width: 1, 280px;
+  height: 840px;
+  top: -487px;
+  left: -355px;
+  border-radius: 40px;
+  padding: 70px;
+  gap: 10px;
+  background-color:
+    #B22222;
+}
+
+.p {
+  color: white;
+  font-weight: 300;
+  font-family: poppins;
+  font-size: 70px;
+  line-height: 100px;
+  /* border: 1px solid #ccc; */
+
+}
+
+h2 {
+  color: #898989;
+  font-size: 10px;
+  margin-top: 60px;
+}
+
+.grid-container {
+  border: 2px solid #ff24bd;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  /* Set gap to 0 to remove space between grid items */
+}
+
+.grid-item {
+  border: 1px solid indigo;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  padding: 0;
+  text-align: center;
+  /* Remove padding from grid items */
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Make images display as block elements to remove whitespace */
+}
+
+.grid-item h3 {
+  margin-top: 10px;
+}
+
+.grid-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  /* Remove margin from paragraphs */
+}
+
+.grid-item.selected {
+  border-color: yellow;
+  /* Blue border when selected */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow */
+}
+
+.grid-item.selected img {
+  filter: grayscale(0);
+  /* Remove grayscale filter when selected */
+}
+
+
+
+
+/* second session of imange */
+
+.gallery {
+  display: flex;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.image {
+  width: 98.5px;
+  height: 600px;
+  gap: 0px;
+  /* opacity: 0px; */
+
+
+  /* width: 150px;
+  height: 300px; */
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  /* transition: opacity 0.5s ease; */
+}
+
+.image:hover img {
+  /* opacity: 0; */
+}
+
+/* changing color to indigo on each image */
+
+.gallery {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.image {
+  width: 98.5px;
+  height: 600px;
+  gap: 0px;
+  /* opacity: 0px; */
+  /* width: 150px;
+  height: 300px; */
+  border: 1px solid #4242438a;
+  /* transition: border-color 0.3s ease; */
+}
+
+.image:hover {
+  /* border-color: indigo; */
+}
+
+/* session to make image transparent */
+.gallery {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.image {
+  width: 98.5px;
+  height: 600px;
+  /* border: 2px solid #ccc; */
+  transition: border-color 0.3s ease, opacity 0.3s ease;
+}
+
+.image:hover {
+  border-color: indigo;
+  /* opacity: 0.5; */
+  /* make the image semi-transparent */
+}
+
+.grid-container {
+  border: 2px solid #ff24bd;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  justify-content: start;
+}
+
+.grid-item {
+  border: 1px solid indigo;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  padding: 0;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-item h3 {
+  margin-top: 10px;
+}
+
+.grid-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  padding: 0;
+  opacity: 0.5;
+}
+
+.grid-item.selected {
+  border-color: yellow;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item.selected img {
+  filter: grayscale(0);
+}
+
+.gallery {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  margin: 0 auto;
+}
+
+.image {
+  width: 98.5px;
+  height: 600px;
+  margin-right: 0px;
+  /* opacity: 1; */
+  transition: border-color 0.3s ease, opacity 0.3s ease;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.image:hover {
+  border-color: 2px indigo;
+  /* Make the image semi-transparent on hover */
+}
